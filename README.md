@@ -1,36 +1,35 @@
+# Flask Chart.js Example
 
-Main aim: Make a web application that would show informative soccer analytics
+This is a simple Flask web application that uses Chart.js to display a dynamic chart based on data collected from an api and user query via a form. The data is stored in a SQLite database.
 
-Ideas for Analytics
+## Prerequisites
 
-Theme 1: What shows that a league is competitive? 
-How much money does the league pay its players
-How many teams come in and out of the top 20 (relegation) 
-How many teams win the UCL or Europa from that league (does the top 6 change usually)
-How many goals (scored, conceded)?
-How many points earned in the league? 
+Before running the application, make sure you have the following installed:
 
-Analytics 1: Compare the difficulty (competitive) of various football leagues (variations of the changes in league table after every matchday).
+- Python (version 3.x)
+- Flask
+- Flask-SQLAlchemy
 
-Analytics 2: 
+Unzip the file and open it via vscode
 
-Historical data (from a particular year till 2023)
-Get data from leagues (somehow) (API, MySQL
-English Premier League
-Spanish La Liga
-French Ligue 1
-Italian Serie A
-German Bundesliga
-Run analytics on the data (somehow) 
-	
-Display the results 
-React
+Usage
+Open visual studio code and cd into final_project. Run command: flask run.
 
+On the home page, you will see a button the says "Get Started". Click this button to view the analysis page.
 
-Other stuff: 
-Update results after every match day 
+Enter the symbol of the company you want to analyse.
 
+Click the "Get Data" button to view the dynamic charts with some description of company on the same page.
+
+You can search up a different company after clicking the "Analysis" button.
+NOTE: "Company must return information for the past five years from the API"
+
+Additional Information
+The application uses Flask for the web framework and Chart.js for rendering charts.
+Company to show is gotten through user input
+Data gotten from api are stored in a SQLite database.
+Feel free to explore and modify the code according to your needs.
 
 
-TODO 1
-Get a single data and establish an analytic then work on the rest
+link to video: https://youtu.be/pJLFWAGDCj4
+

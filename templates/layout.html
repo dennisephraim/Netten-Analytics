@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <!-- Character set for the document -->
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Link to an external stylesheet (styles.css) -->
+        <link href="/static/styles.css" rel="stylesheet">
+        
+        <!-- Include Chart.js library from a CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+        <!-- Title for the document (with dynamic content using Jinja templating) -->
+        <title>Netten: {% block title %}{% endblock %}</title>
+    </head>
+
+    <body>
+        <!-- Header section with the website title -->
+        <header>
+            <h1>Netten: Let's Analyse Together</h1>
+        </header>
+
+        <!-- Navigation menu with links to Home and Analysis pages -->
+        <nav>
+            <a href="/">Home</a>
+            <a href="/analysis">Analysis</a>
+        </nav>
+
+        <!-- Main content area with a container-fluid class, padding, and text-center alignment -->
+        <main class="container-fluid py-5 text-center">
+            <!-- Dynamic content block (main) to be filled by child templates -->
+            {% block main %}{% endblock %}
+        </main>
+
+        <!-- Footer section with contact information -->
+        <footer>
+            <p>Contact us at info@financeanalysis.com</p>
+        </footer>
+
+    </body>
+</html>

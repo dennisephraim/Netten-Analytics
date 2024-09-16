@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    <!-- Title specific to the Analysis page -->
+    Analysis
+{% endblock %}
+
+{% block main %}
+
+    <!-- Input section for entering a company symbol -->
+    <div id='getinput'>
+        <section>
+            <!-- Section heading -->
+            <h2>Type a Company symbol to analyze</h2>
+            <!-- Form for entering a company symbol -->
+            <label for="symbol">Symbol</label>
+            <input type="text" name="symbol" id="symbol" placeholder="symbol" style="padding: 10px 20px; text-decoration: none;">
+            <!-- Button to trigger data retrieval -->
+            <button id="showData" class="btn btn-primary" style="padding: 10px 20px; background-color: #333; color: white; text-decoration: none;">Get data</button>
+        </section>
+    </div>
+
+    <!-- Canvas elements for displaying Chart.js charts -->
+    <canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
+    <canvas id="myChart2" style="width:100%;max-width:600px;position: absolute; top: 145px; left: 800px;"></canvas>
+
+    <!-- Section for displaying additional information or description -->
+    <div id='description'>
+        <p> </p>
+    </div>
+
+    <!-- Include the JavaScript file for handling interactions and rendering charts -->
+    <script src="static/script.js"></script>
+
+{% endblock %}
